@@ -1,0 +1,14 @@
+[Essential]
+Zip=DebugPack.zip
+
+[Popular]
+FileSystem=./
+FileSystem=Materials/Common
+FileSystem=Materials/Common/GLSL
+FileSystem=Materials/Common/HLSL
+FileSystem=Materials/Common/Metal
+
+# Do not load this as a resource. It's here merely to tell the code where
+# the Hlms templates are located
+[Hlms]
+DoNotUseAsResource=./
