@@ -26,8 +26,9 @@ void registerHlms( void )
 
     // At this point rootHlmsFolder should be a valid path to the Hlms data folder
 
-    Root::getSingleton().getHlmsManager()->registerHlms( CreateHlms<HlmsUnlit>(rootHlmsFolder) );
-    Root::getSingleton().getHlmsManager()->registerHlms( CreateHlms<HlmsPbs>(rootHlmsFolder) );
+    auto mng = Root::getSingleton().getHlmsManager();
+    mng->registerHlms( CreateHlms<HlmsUnlit>(rootHlmsFolder) );
+    mng->registerHlms( CreateHlms<HlmsPbs>(rootHlmsFolder) );
 }
 
 template<class T>
